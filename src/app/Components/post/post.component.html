@@ -1,0 +1,20 @@
+<h1>Fetch Api in Angular</h1>
+<ul class="lists">
+    <!-- iterate over the array -->
+    @for (i of data; track i){
+        <div class="listing">
+            <li>Id : {{i.id}}</li>
+            <li>Title : {{i.title}}</li>
+            <li>Decription : {{i.description}}</li>
+            <li>Price : {{i.price}}</li>
+            <li>Discount : {{i.discountPercentage}}</li>
+            <li>Rating : {{i.rating}}</li>
+            <li>Stock : {{i.stock}}</li>
+            <li>Brand : {{i.brand}}</li>
+            <li>Category : {{i.category}}</li>
+            <li>Image : <img src={{i.thumbnail}}></li>
+           
+        </div>
+       
+    }
+</ul>
