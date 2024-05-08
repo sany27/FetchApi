@@ -19,6 +19,7 @@ export class PostComponent implements OnInit {
 
   fetchData(){
     this.httpClient
+    // api : "https://dummyjson.com/products"
     .get('https://dummyjson.com/products')
     .subscribe((data : any)=>{
       this.data = data.products;
